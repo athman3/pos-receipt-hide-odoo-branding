@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <!-- Hide "Powered by Odoo" branding from POS receipts -->
+    <t t-name="pos_receipt_hide_odoo_branding.HideOdooBranding" 
+       t-inherit="point_of_sale.OrderReceipt" 
+       t-inherit-mode="extension">
+        <!-- Hide the Odoo branding section by setting t-if to false -->
+        <xpath expr="//div[hasclass('pos-receipt-order-data') and hasclass('text-center') and hasclass('pt-3')]" position="attributes">
+            <attribute name="t-if">false</attribute>
+        </xpath>
+    </t>
+</templates>
