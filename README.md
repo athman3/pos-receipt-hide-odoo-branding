@@ -2,6 +2,8 @@
 
 Odoo 19 module to hide "Powered by Odoo" branding from POS receipts with a configurable toggle.
 
+![Before and After](screenshot.png)
+
 ## Features
 
 - Hide "Powered by Odoo" branding from POS receipts
